@@ -1,0 +1,535 @@
+/**
+ * IFFarroupilha Theme
+ * Copyright (c) Jon Whipple
+ * based on the common.css design by John Willinky
+ *
+ * based on common.css
+ *
+ * Copyright (c) 2013-2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ */
+
+/**
+ * Common HTML elements
+ */
+body {
+	background-color: #fff;
+	color: #333;
+        font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+}
+
+a:link {
+	color: #3F811B;
+        text-decoration: none;
+}
+
+a:active {
+	color: #3F811B;
+}
+
+a:visited {
+	color: #3F811B;
+}
+
+a:hover {
+	color: #333;
+        background: transparent;
+	border-bottom:1px dotted #3F811B;
+}
+
+label.error {
+	color: #900;
+}
+
+input {
+	border: 1px solid #333333;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #ffffff;
+	color: #333333;
+	border: 1px solid #999;
+        padding:5px;
+                -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+}
+
+input.textField:hover, select.selectMenu:hover, textarea.textArea:hover, input.uploadField:hover {
+
+}
+
+
+
+
+input.button {
+	background-color: #EEEEFF;
+}
+
+input.defaultButton {
+	background-color: #3399CC;
+	color: #eee;
+}
+
+#header {
+	background-color: #1F5600;
+        background-image: url(images/header.png);
+        background-repeat: repeat-x;
+        height: 156px;
+        padding-top: 30px;
+
+}
+
+#header h1 {
+	width:auto;
+        height:82px;
+        font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+        padding-top: 25px;
+        margin-right: 10%;
+        text-align: left;
+        background-image: url(images/marca.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+}
+
+#footer {
+	width: 100%;
+	min-height: 35px;
+	background-color: #3F811B;
+	color:  #ffffff;
+	padding: 15px;
+}
+
+#footerContent {
+	color:  #ffffff;
+}
+
+#main h2 {
+	font-family:  "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #333;
+}
+
+#main h3 {
+	font-family:  "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #3F811B;
+}
+
+#navbar {
+	border-bottom: 0px dotted #1F5600;
+}
+
+#navbar .menu {
+    margin-top: -40px !important;
+    position: absolute;
+    margin-left: 30px !important;
+}
+#navbar .menu li {
+   margin-left:-30px !important;
+}
+#navbar .menu a {
+    color:#ffffff;
+    font-size: 12px !important;
+    padding:12px;
+    border-left:1px dotted  #41831D;
+    border-right:1px dotted  #41831D;
+}
+#navbar .menu a:hover {
+     border-top:5px solid white;
+     background-color: #41831D;
+}
+
+#breadcrumb {
+	color: #666666;
+        border-bottom:0px dotted  #41831D;
+        padding-bottom: 12px;
+        font-size:12px;
+        background: #eee;
+        padding-left: 10px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+}
+
+#content {
+	border-top: 0px dotted #3F811B;
+        background-color: #eee;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        padding:10px;
+        padding-top: 15px;
+        padding-right: -10px;
+        font-size:12px;
+}
+
+#content h3 {
+	font-family:  "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #3F811B;
+	font-weight: bold;
+        padding: 5px !important;
+        padding-bottom: 10px;
+        padding-left: 10px !important;
+        display: block;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        background-color: white;
+        margin:0;
+    margin-bottom: 15px;
+}
+
+#myJournals {
+    margin-top: 15px;
+}
+
+#content p {
+   font-size:12px;
+   padding-top: 10px;
+   padding-bottom: 5px;
+}
+
+#content p a {
+   font-size:10px;
+}
+
+#content h4 {
+	font-family:  "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #666666;
+}
+
+#content h5 {
+	color: #666666;
+}
+
+.plain {
+    margin-top: 15px;
+     margin-bottom: 15px;
+    font-size: 12px;
+}
+
+#rightSidebar {
+    background-color: #EEEEEE;
+    padding: 15px;
+    margin-left: 15px;
+    margin-top: 16px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        font-size:12px;
+}
+
+#sidebarDevelopedBy{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+}
+
+ #sidebarUser{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+}
+.action {
+    font-weight:bold;
+    background-color: #3F811B;
+    padding: 5px;
+     color:#fff !important;
+    -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+            padding-left:10px  !important;
+    padding-right: 10px  !important;
+
+}
+.action:hover {
+border:0;
+      background-color: #fcfcfc;
+      color:#3F811B !important;
+}
+ #sidebarHelp{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+}
+
+ #notification{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+}
+
+ #notification ul{
+
+        margin-top: 15px;
+}
+#sidebarInformation {
+       border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 30px;
+            display:block;
+
+}
+ #sidebarInformation ul{
+
+        margin-top: 15px;
+}
+ #sidebarFontSize{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+
+}
+
+ #sidebarNavigation{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+}
+
+ #sidebarEditor{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+}
+
+ #sidebarSectionEditor{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+}
+
+ #sidebarAuthor{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+}
+
+ #sidebarReviewer{
+    border:0 !important;
+    background-color: white;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+}
+
+
+
+#leftSidebar div.block {
+	padding: 0.5em 0;
+	border-top: 5px solid #3F811B;
+	border-bottom: 1px solid #3F811B;
+	margin-bottom: 5px;
+	color: #999999;
+
+}
+
+#developedBy {
+    font-size: 12px;
+}
+
+#rightSidebar div.block {
+	padding: 0.5em 0;
+	border-top: 5px solid #3F811B;
+	border-bottom: 1px solid #3F811B;
+	margin-bottom: 5px;
+	color: #999999;
+}
+
+#leftSidebar div.block span.blockTitle {
+	padding: 0;
+	font-weight: bold;
+	color: #3F811B;
+
+}
+
+#rightSidebar div.block span.blockTitle {
+	padding: 0;
+	font-weight: bold;
+	color: #3F811B;
+}
+
+#leftSidebar div.block span.blockSubtitle {
+	font-weight: bold;
+}
+
+#rightSidebar div.block span.blockSubtitle {
+	font-weight: bold;
+}
+
+pre {
+	background-color: #EEEEFF;
+}
+
+div.separator {
+	border-bottom: 0px dotted #3F811B;
+}
+
+#sizer a {
+
+}
+
+.textField {
+    width: 158px !important;
+}
+
+.selectMenu {
+    width: 170px !important;
+}
+
+.button {
+    width: auto;
+    margin-top: 10px;
+            -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        background: #3F811B !important;
+        padding: 5px;
+        color: white;
+        border:0;
+        cursor: pointer;
+}
+.pkp_controllers_fontController_smallFont {
+    margin-top: 22px;
+    border: 0 !important;
+margin-left:-10px !important;
+}
+.pkp_controllers_fontController_defaultFont {
+    margin-top: 22px;
+    border: 0 !important;
+
+}
+.pkp_controllers_fontController_largeFont {
+    margin-top: 22px;
+    border: 0 !important;
+}
+
+#journalDescription {
+    font-size: 12px;
+}
+
+.issueCoverDescription {
+    font-size: 12px;
+}
+
+ul.menu > li > a {
+    font-size: 12px;
+}
+
+.steplist {
+    margin-bottom: 15px !important;
+    font-size:12px;
+}
+
+.data {
+    margin-top: 15px !important;
+}
+
+#issueDescription {
+    margin-bottom: 15px !important;
+     font-size:12px;
+}
+table {
+ font-size: 12px !important;
+}
+
+#intro {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+table td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.headseparator {
+   border-bottom:1px dotted #333;
+}
+
+#issueCoverDescription {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tocGalleys a {
+    font-weight:bold;
+    background-color: #3F811B;
+    padding: 5px;
+     color:#fff !important;
+    -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+            padding-left:10px  !important;
+    padding-right: 10px  !important;
+}
+
+.tocGalleys a:hover {
+border:0;
+      background-color: #fcfcfc;
+      color:#3F811B !important;
+}
+
+#submitStart {
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+#submission, #issueId {
+    margin-top: 15px;
+}
