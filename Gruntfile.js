@@ -4,10 +4,10 @@ grunt.initConfig({
 
     clean: {
         dist: {
-            src: ['dist'],
+            src: ['dist/'],
         },
         css: {
-            src: ['css'],
+            src: ['ifrs-theme.css'],
         },
     },
 
