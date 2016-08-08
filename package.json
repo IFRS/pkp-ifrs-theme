@@ -1,6 +1,6 @@
 {
-  "name": "ps-2016-2",
-  "private": true,
+  "name":                     "pkp-ifrs-theme",
+  "private":                  true,
   "devDependencies": {
     "autoprefixer":           "*",
     "grunt":                  "*",
