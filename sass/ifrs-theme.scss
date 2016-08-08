@@ -1,0 +1,556 @@
+/**
+ * IFRS Theme
+ * Copyright (c) Jon Whipple
+ * based on the common.css design by John Willinky
+ *
+ * based on common.css
+ *
+ * Copyright (c) 2013-2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ */
+
+$color-default: #333;
+$color-almost-grey: #EEEEFF;
+$color-almost-white: #fcfcfc;
+$color-dark-green: #1F5600;
+$color-green: #3F811B;
+$color-green2: #41831D;
+$color-grey: #666;
+$color-light-grey: #999;
+$color-light-blue: #3399CC;
+$color-red: #900;
+
+$font-stack: "Trebuchet MS",Helvetica,Verdana,Arial,sans-serif;
+
+body {
+	background-color: #fff;
+	color: $color-default;
+    font-family: $font-stack;
+}
+
+a:link {
+	color: $color-green;
+    text-decoration: none;
+}
+
+a:active,
+a:visited {
+	color: $color-green;
+}
+
+a:hover {
+	color: $color-default;
+    background: transparent;
+	border-bottom:1px dotted $color-green;
+}
+
+label.error {
+	color: $color-red;
+}
+
+input {
+	border: 1px solid $color-default;
+}
+
+input.textField,
+select.selectMenu,
+textarea.textArea,
+input.uploadField {
+	background-color: #fff;
+	color: $color-default;
+	border: 1px solid $color-light-grey;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input.button {
+	background-color: $color-almost-grey;
+}
+
+input.defaultButton {
+	background-color: $color-light-blue;
+	color: #eee;
+}
+
+#header {
+	background-color: $color-dark-green;
+    background-image: url(images/header.png);
+    background-repeat: repeat-x;
+    height: 156px;
+    padding-top: 30px;
+
+    h1 {
+    	width:auto;
+        height:82px;
+        font-family: $font-stack;
+    	font-weight: bold;
+    	color: #fff;
+        padding-top: 25px;
+        margin-right: 10%;
+        text-align: left;
+        background-image: url(images/marca.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}
+
+#footer {
+	width: 100%;
+	min-height: 35px;
+	background-color: $color-green;
+	color:  #fff;
+	padding: 15px;
+}
+
+#footerContent {
+	color:  #fff;
+}
+
+#main {
+    h2 {
+    	font-family:  $font-stack;
+    	font-weight: bold;
+    	color: $color-default;
+    }
+
+    h3 {
+    	font-family:  $font-stack;
+    	font-weight: bold;
+    	color: $color-green;
+    }
+}
+
+#navbar {
+	border-bottom: 0px dotted $color-dark-green;
+
+    .menu {
+        margin-top: -40px !important;
+        position: absolute;
+        margin-left: 30px !important;
+
+        li {
+           margin-left:-30px !important;
+        }
+
+        a {
+            color:#fff;
+            font-size: 12px !important;
+            padding:12px;
+            border-left:1px dotted  $color-green2;
+            border-right:1px dotted  $color-green2;
+
+            &:hover {
+                border-top:5px solid #fff;
+                background-color: $color-green2;
+            }
+        }
+    }
+}
+
+#breadcrumb {
+	color: $color-grey;
+    border-bottom:0px dotted  $color-green2;
+    padding-bottom: 12px;
+    font-size:12px;
+    background: #eee;
+    padding-left: 10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+#content {
+	border-top: 0px dotted $color-green;
+    background-color: #eee;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-right: -10px;
+    font-size: 12px;
+
+    h3 {
+    	font-family:  $font-stack;
+    	font-weight: bold;
+    	color: $color-green;
+    	font-weight: bold;
+        padding: 5px !important;
+        padding-bottom: 10px;
+        padding-left: 10px !important;
+        display: block;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size:12px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+
+        a {
+           font-size:10px;
+        }
+    }
+
+    h4 {
+    	font-family:  $font-stack;
+    	font-weight: bold;
+    	color: $color-grey;
+    }
+
+    h5 {
+    	color: $color-grey;
+    }
+}
+
+
+#myJournals {
+    margin-top: 15px;
+}
+
+.plain {
+    margin-top: 15px;
+     margin-bottom: 15px;
+    font-size: 12px;
+}
+
+#rightSidebar {
+    background-color: #eee;
+    padding: 15px;
+    margin-left: 15px;
+    margin-top: 16px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        font-size:12px;
+}
+
+#sidebarDevelopedBy{
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+}
+
+#sidebarUser {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+}
+
+.action {
+    font-weight: bold;
+    background-color: $color-green;
+    padding: 5px;
+    color:#fff !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-left: 10px  !important;
+    padding-right: 10px  !important;
+
+    &:hover {
+        border:0;
+        background-color: $color-almost-white;
+        color:$color-green !important;
+    }
+}
+
+#sidebarHelp {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#notification {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+
+    ul {
+        margin-top: 15px;
+    }
+}
+
+#sidebarInformation {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 30px;
+    display:block;
+
+    ul {
+        margin-top: 15px;
+    }
+}
+
+
+#sidebarFontSize {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+
+}
+
+ #sidebarNavigation {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+#sidebarEditor {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+#sidebarSectionEditor {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+#sidebarAuthor {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+#sidebarReviewer {
+    border:0 !important;
+    background-color: #fff;
+    padding:10px !important;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+#leftSidebar {
+    div.block {
+    	padding: 0.5em 0;
+    	border-top: 5px solid $color-green;
+    	border-bottom: 1px solid $color-green;
+    	margin-bottom: 5px;
+    	color: $color-light-grey;
+
+        span.blockTitle {
+        	padding: 0;
+        	font-weight: bold;
+        	color: $color-green;
+        }
+
+        span.blockSubtitle {
+        	font-weight: bold;
+        }
+    }
+}
+
+#developedBy {
+    font-size: 12px;
+}
+
+#rightSidebar {
+    div.block {
+    	padding: 0.5em 0;
+    	border-top: 5px solid $color-green;
+    	border-bottom: 1px solid $color-green;
+    	margin-bottom: 5px;
+    	color: $color-light-grey;
+
+        span.blockTitle {
+        	padding: 0;
+        	font-weight: bold;
+        	color: $color-green;
+        }
+
+        span.blockSubtitle {
+        	font-weight: bold;
+        }
+    }
+}
+
+pre {
+	background-color: $color-almost-grey;
+}
+
+div.separator {
+	border-bottom: 0px dotted $color-green;
+}
+
+#sizer a {
+
+}
+
+.textField {
+    width: 158px !important;
+}
+
+.selectMenu {
+    width: 170px !important;
+}
+
+.button {
+    width: auto;
+    margin-top: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: $color-green !important;
+    padding: 5px;
+    color: #fff;
+    border:0;
+    cursor: pointer;
+}
+
+.pkp_controllers_fontController_smallFont {
+    margin-top: 22px;
+    border: 0 !important;
+    margin-left: -10px !important;
+}
+
+.pkp_controllers_fontController_defaultFont {
+    margin-top: 22px;
+    border: 0 !important;
+}
+
+.pkp_controllers_fontController_largeFont {
+    margin-top: 22px;
+    border: 0 !important;
+}
+
+#journalDescription {
+    font-size: 12px;
+}
+
+.issueCoverDescription {
+    font-size: 12px;
+}
+
+ul.menu {
+    > li {
+        > a {
+            font-size: 12px;
+        }
+    }
+}
+
+.steplist {
+    margin-bottom: 15px !important;
+    font-size: 12px;
+}
+
+.data {
+    margin-top: 15px !important;
+}
+
+#issueDescription {
+    margin-bottom: 15px !important;
+    font-size: 12px;
+}
+
+table {
+    font-size: 12px !important;
+
+    td {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+#intro {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.headseparator {
+   border-bottom: 1px dotted $color-default;
+}
+
+#issueCoverDescription {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tocGalleys {
+    a {
+        font-weight:bold;
+        background-color: $color-green;
+        padding: 5px;
+        color:#fff !important;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        padding-left:10px  !important;
+        padding-right: 10px  !important;
+
+        &:hover {
+            border: 0;
+            background-color: $color-almost-white;
+            color: $color-green !important;
+        }
+    }
+}
+
+#submitStart {
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+#submission,
+#issueId {
+    margin-top: 15px;
+}
