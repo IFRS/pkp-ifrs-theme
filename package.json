@@ -1,0 +1,15 @@
+{
+  "name": "ps-2016-2",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer":           "*",
+    "grunt":                  "*",
+    "grunt-contrib-clean":    "*",
+    "grunt-contrib-copy":     "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-sass":     "*",
+    "grunt-contrib-watch":    "*",
+    "grunt-postcss":          "*",
+    "pixrem":                 "*"
+  }
+}
