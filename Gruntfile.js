@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+var target = grunt.option('target') || false;
 grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -44,13 +45,25 @@ grunt.initConfig({
         }
     },
 
+    rsync: {
+        options: {
+            args: ['-rLtvzh', '--stats', '--delete'],
+        },
+        prod: {
+            options: {
+                src: './dist/',
+                dest: target,
+            },
+        },
+    },
+
     sass: {
         dist: {
             options: {
                 loadPath: 'sass',
                 noCache: true,
                 sourcemap: 'none',
-                style: 'expanded'
+                style: 'compressed'
             },
             files: [{
                 expand: true,
@@ -80,6 +93,7 @@ grunt.initConfig({
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks("grunt-rsync");
 
 
     // Tasks
@@ -98,4 +112,5 @@ grunt.initConfig({
         'build',
         'copy'
     ]);
+    grunt.registerTask('deploy', ['rsync']);
 };

@@ -10,6 +10,7 @@
     "grunt-contrib-sass":     "*",
     "grunt-contrib-watch":    "*",
     "grunt-postcss":          "*",
+    "grunt-rsync":            "*",
     "pixrem":                 "*"
   }
 }
