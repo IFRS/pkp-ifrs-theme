@@ -28,6 +28,7 @@ body {
 	background-color: #fff;
 	color: $color-default;
     font-family: $font-stack;
+	font-size: 14px;
 }
 
 a:link {
@@ -43,7 +44,7 @@ a:visited {
 a:hover {
 	color: $color-default;
     background: transparent;
-	border-bottom:1px dotted $color-green;
+	border-bottom: 1px dotted $color-green;
 }
 
 label.error {
@@ -86,17 +87,17 @@ input.defaultButton {
     padding-top: 30px;
 
     h1 {
-    	width:auto;
-        height:82px;
+    	width: auto;
+        height: 82px;
         font-family: $font-stack;
     	font-weight: bold;
     	color: #fff;
         padding-top: 25px;
         margin-right: 10%;
         text-align: left;
-        background-image: url(images/marca.png);
-        background-repeat: no-repeat;
-        background-position: top right;
+        // background-image: url(images/marca.png);
+        // background-repeat: no-repeat;
+        // background-position: top right;
     }
 }
 
@@ -113,14 +114,16 @@ input.defaultButton {
 }
 
 #main {
+	width: 61%;
+
     h2 {
-    	font-family:  $font-stack;
+    	font-family: $font-stack;
     	font-weight: bold;
     	color: $color-default;
     }
 
     h3 {
-    	font-family:  $font-stack;
+    	font-family: $font-stack;
     	font-weight: bold;
     	color: $color-green;
     }
@@ -130,39 +133,47 @@ input.defaultButton {
 	border-bottom: 0px dotted $color-dark-green;
 
     .menu {
-        margin-top: -40px !important;
+        margin-top: -37px !important;
         position: absolute;
         margin-left: 30px !important;
 
         li {
-           margin-left:-30px !important;
+           margin-left: -30px !important;
         }
 
         a {
-            color:#fff;
-            font-size: 12px !important;
-            padding:12px;
-            border-left:1px dotted  $color-green2;
-            border-right:1px dotted  $color-green2;
+            color: #fff;
+            font-size: 1em !important;
+            padding: 12px;
+            border-left: 1px dotted  $color-green2;
+            border-right: 1px dotted  $color-green2;
 
             &:hover {
-                border-top:5px solid #fff;
+                border-top: 5px solid #fff;
                 background-color: $color-green2;
             }
         }
     }
 }
 
+ul {
+	&.menu {
+		li {
+			padding: 0 25px 0 0;
+		}
+	}
+}
+
 #breadcrumb {
 	color: $color-grey;
-    border-bottom:0px dotted  $color-green2;
+    border-bottom: 0px dotted  $color-green2;
     padding-bottom: 12px;
-    font-size:12px;
+    font-size: 1em;
     background: #eee;
     padding-left: 10px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 #content {
@@ -174,10 +185,10 @@ input.defaultButton {
     padding: 10px;
     padding-top: 15px;
     padding-right: -10px;
-    font-size: 12px;
+    font-size: 1em;
 
     h3 {
-    	font-family:  $font-stack;
+    	font-family: $font-stack;
     	font-weight: bold;
     	color: $color-green;
     	font-weight: bold;
@@ -194,17 +205,17 @@ input.defaultButton {
     }
 
     p {
-        font-size:12px;
+        font-size: 1em;
         padding-top: 10px;
         padding-bottom: 5px;
 
         a {
-           font-size:10px;
+           font-size: 0.9em;
         }
     }
 
     h4 {
-    	font-family:  $font-stack;
+    	font-family: $font-stack;
     	font-weight: bold;
     	color: $color-grey;
     }
@@ -222,7 +233,7 @@ input.defaultButton {
 .plain {
     margin-top: 15px;
      margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 #rightSidebar {
@@ -233,7 +244,7 @@ input.defaultButton {
         -moz-border-radius:5px;
         -webkit-border-radius:5px;
         border-radius:5px;
-        font-size:12px;
+        font-size: 1em;
 }
 
 #sidebarDevelopedBy{
@@ -400,7 +411,7 @@ input.defaultButton {
 }
 
 #developedBy {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 #rightSidebar {
@@ -431,8 +442,8 @@ div.separator {
 	border-bottom: 0px dotted $color-green;
 }
 
-#sizer a {
-
+#sizer {
+	display: inline-block;
 }
 
 .textField {
@@ -473,24 +484,24 @@ div.separator {
 }
 
 #journalDescription {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .issueCoverDescription {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 ul.menu {
     > li {
         > a {
-            font-size: 12px;
+            font-size: 1em;
         }
     }
 }
 
 .steplist {
     margin-bottom: 15px !important;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .data {
@@ -499,11 +510,11 @@ ul.menu {
 
 #issueDescription {
     margin-bottom: 15px !important;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 table {
-    font-size: 12px !important;
+    font-size: 1em !important;
 
     td {
         padding-top: 10px !important;
@@ -512,7 +523,7 @@ table {
 }
 
 #intro {
-    font-size: 12px;
+    font-size: 1em;
     margin-bottom: 30px;
 }
 
