@@ -80,24 +80,34 @@ input.defaultButton {
 }
 
 #header {
-	background-color: $color-dark-green;
-    background-image: url(images/header.png);
+	// background-color: $color-dark-green;
+	background-color: #ddf0df;
+    // background-image: url(images/header.png);
     background-repeat: repeat-x;
-    height: 156px;
-    padding-top: 30px;
+    min-height: 200px;
+	height: auto;
+    padding-top: 5px;
+	// padding-bottom: 40px;
 
     h1 {
     	width: auto;
-        height: 82px;
+        height: auto;
         font-family: $font-stack;
     	font-weight: bold;
-    	color: #fff;
+    	color: $color-dark-green;
         padding-top: 25px;
+		padding-bottom: 0;
         margin-right: 10%;
         text-align: left;
         // background-image: url(images/marca.png);
         // background-repeat: no-repeat;
         // background-position: top right;
+
+		img {
+			margin-top: -30px;
+			width: 100%;
+			height: auto;
+		}
     }
 }
 
@@ -130,27 +140,34 @@ input.defaultButton {
 }
 
 #navbar {
-	border-bottom: 0px dotted $color-dark-green;
+	// background-color: $color-dark-green;
+	background-color: #edf3e9;
+	border-bottom: none;
+	margin-bottom: 30px;
+	padding: 20px 0;
 
-    .menu {
-        margin-top: -37px !important;
-        position: absolute;
-        margin-left: 30px !important;
+    ul.menu {
+        // margin-top: 0 !important;
+        // position: absolute;
+        // margin-left: 30px !important;
 
         li {
-           margin-left: -30px !important;
+			// background-color: $color-dark-green;
+        	// margin-left: -30px !important;
+			// padding: 12px 25px 12px 12px;
         }
 
         a {
-            color: #fff;
+            color: $color-dark-green;
             font-size: 1em !important;
-            padding: 12px;
-            border-left: 1px dotted  $color-green2;
-            border-right: 1px dotted  $color-green2;
+			font-weight: bold;
+            // padding: 12px;
+            // border-left: 1px dotted  $color-green2;
+            // border-right: 1px dotted  $color-green2;
 
             &:hover {
-                border-top: 5px solid #fff;
-                background-color: $color-green2;
+                // border-top: 5px solid #fff;
+                // background-color: $color-green2;
             }
         }
     }
@@ -158,9 +175,7 @@ input.defaultButton {
 
 ul {
 	&.menu {
-		li {
-			padding: 0 25px 0 0;
-		}
+        margin: 0 30px 0 30px !important;
 	}
 }
 
