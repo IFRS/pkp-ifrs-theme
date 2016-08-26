@@ -80,14 +80,11 @@ input.defaultButton {
 }
 
 #header {
-	// background-color: $color-dark-green;
 	background-color: #ddf0df;
-    // background-image: url(images/header.png);
     background-repeat: repeat-x;
-    min-height: 200px;
+    min-height: 100px;
 	height: auto;
     padding-top: 5px;
-	// padding-bottom: 40px;
 
     h1 {
     	width: auto;
@@ -99,9 +96,6 @@ input.defaultButton {
 		padding-bottom: 0;
         margin-right: 10%;
         text-align: left;
-        // background-image: url(images/marca.png);
-        // background-repeat: no-repeat;
-        // background-position: top right;
 
 		img {
 			margin-top: -30px;
@@ -140,34 +134,20 @@ input.defaultButton {
 }
 
 #navbar {
-	// background-color: $color-dark-green;
-	background-color: #edf3e9;
+	background-color: #5c8a4c;
 	border-bottom: none;
+	border-radius: 5px;
 	margin-bottom: 30px;
 	padding: 20px 0;
 
     ul.menu {
-        // margin-top: 0 !important;
-        // position: absolute;
-        // margin-left: 30px !important;
-
-        li {
-			// background-color: $color-dark-green;
-        	// margin-left: -30px !important;
-			// padding: 12px 25px 12px 12px;
-        }
-
         a {
-            color: $color-dark-green;
+			color: #fff;
             font-size: 1em !important;
 			font-weight: bold;
-            // padding: 12px;
-            // border-left: 1px dotted  $color-green2;
-            // border-right: 1px dotted  $color-green2;
 
             &:hover {
-                // border-top: 5px solid #fff;
-                // background-color: $color-green2;
+				border-bottom: 1px dotted #fff;
             }
         }
     }
