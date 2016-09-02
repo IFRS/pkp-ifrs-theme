@@ -34,6 +34,7 @@ body {
 a:link {
 	color: $color-green;
     text-decoration: none;
+	border-bottom: 1px dotted $color-green;
 }
 
 a:active,
@@ -44,7 +45,8 @@ a:visited {
 a:hover {
 	color: $color-default;
     background: transparent;
-	border-bottom: 1px dotted $color-green;
+	// border-bottom: 1px dotted $color-green;
+	border: none;
 }
 
 label.error {
@@ -145,6 +147,7 @@ input.defaultButton {
 			color: #fff;
             font-size: 1em !important;
 			font-weight: bold;
+			border: none;
 
             &:hover {
 				border-bottom: 1px dotted #fff;
@@ -169,6 +172,14 @@ ul {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+
+	a {
+		border: none;
+
+		&:hover {
+			border-bottom: 1px dotted $color-green;
+		}
+	}
 }
 
 #content {
